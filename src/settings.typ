@@ -59,7 +59,7 @@
   font:   globalFont,
   fill:   black,
   weight: "bold",
-  size:   22pt,
+  size:   25pt,
   content
 )
 
