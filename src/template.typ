@@ -150,7 +150,6 @@
 // If provided, `photo` should be a string, the path
 // to the photo. An empty string will be interpreted
 // as the absence of a photo.
-
 #let layout(..args) = {
 
   // Define sections of the CV based on arguments, to avoid
@@ -217,9 +216,9 @@
       gap: photoSpace
     )
   } else if (header != none) {
-    headerSection = arguments.named().at("header")
+    headerSection = args.named().at("header")
   } else if (photo != none) {
-    headerSection = align(center, image(profilePhoto, height: 2.8cm))
+    headerSection = align(center, image(args.named().at("photo"), height: 2.8cm))
   }
 
   if (headerSection != none) {
