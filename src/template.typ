@@ -172,7 +172,7 @@
   set par(leading: interLine)
 
   // We remove any automatic spacing to provide our own:
-  show par: set block(above: 0pt, below: 0pt)
+  set par(spacing: 0pt)
 
   // Layout setup
   set align(left)
